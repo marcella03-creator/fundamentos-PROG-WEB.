@@ -1,0 +1,121 @@
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #5e17af;
+    border: 6px solid #d40b69;
+    border-radius: 30px;
+    color: rgb(252, 249, 249);
+}
+.cinema{
+   
+    margin-right: 15px;
+    width: 60px;
+    height: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    color: #333;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li a {
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.submenu li a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+.carousel {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+    overflow: hidden;
+    border: 6px solid #c7d40b;
+    border-radius: 10px;
+    background-color: #751792;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+    padding: 100px;
+}
+
+.carousel-item.active {
+    display: block;
+    padding: 100px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(5, 5, 5, 0.5);
+    color: rgb(249, 248, 252);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
